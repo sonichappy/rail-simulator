@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rail Lab · 票务架构模拟实验室</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><div class="brand"><span class="mark">R</span><div><strong>Rail Lab</strong><span>票务架构模拟实验室</span></div></div><div class="headright"><span class="tag">本地模拟 · 无外部交易</span><button id="export">导出本次报告 ↓</button><button id="help">使用说明</button></div></header>
+<div class="shell"><aside>
+ <div class="eyebrow">01 / 选择实验</div><label for="market">市场配置</label><select id="market"></select><p class="hint">三个虚构市场用于验证扩展边界，不代表任何国家的实际规则。</p>
+ <label for="scenario">业务场景</label><select id="scenario"></select><p id="goal" class="hint"></p><div id="overrides" class="notice"></div>
+ <div class="actions"><button id="step" class="primary">执行下一步 →</button><button id="auto">自动播放</button></div><div class="actions"><button id="finish">运行至结束</button><button id="reset">重置场景</button></div><div id="progressLabel" aria-live="polite"></div><progress id="progress" max="1" value="0"></progress>
+ <hr><div class="eyebrow">02 / 验证边界</div><p class="hint">打开故障开关，再运行相关场景，检查器应能发现失效的设计。</p>
+ <label class="check"><input type="checkbox" id="skipVersion">关闭占用版本校验</label>
+ <label class="check"><input type="checkbox" id="skipQuota">关闭库存类额度校验</label>
+ <label class="check"><input type="checkbox" id="skipIdempotency">注入重复占用写入缺陷</label>
+ <button id="batch" class="full">批量验证 14 个场景</button><div id="batchSummary" class="hint"></div>
+ <hr><details><summary>编辑市场配置</summary><p class="hint">修改模板、价格或用量参数。应用后重置当前实验。</p><textarea id="config" spellcheck="false" rows="15" aria-label="市场 JSON 配置"></textarea><button id="applyConfig" class="full">应用配置并重置</button></details>
+ <div class="aside-foot">核心模型 v1.0<br>结果由状态机实际执行产生</div>
+</aside>
+<main>
+ <section class="intro"><div><div class="eyebrow">ARCHITECTURE / EXECUTION / EVIDENCE</div><h1>让业务流程真正跑一遍。</h1><p>跟踪模块调用，检查库存、订单与权益，验证本地规则能否在同一套核心上运行。</p></div><div class="clock"><span>模拟时间</span><strong id="clock">T + 0 分钟</strong><span id="version">库存版本 v0</span></div></section>
+ <section class="flow" aria-label="模块交互"><div class="module" data-module="channel"><small>接入</small><strong>开放 API / 渠道</strong><span>校验身份与归属</span></div><span class="arrow">→</span><div class="module" data-module="trade"><small>协调</small><strong>销售交易</strong><span>管理订单与资金</span></div><span class="arrow">⇄</span><div class="module" data-module="price"><small>策略</small><strong>产品与价格</strong><span>定义权益与计算报价</span></div><span class="arrow">⇄</span><div class="module" data-module="seat"><small>策略</small><strong>席位与选座</strong><span>提供布局与规则判断</span></div><span class="arrow">→</span><div class="module" data-module="core"><small>事实</small><strong>核心票务</strong><span>执行资源与权益占用</span></div></section>
+ <p class="flow-caption">上图展示职责分区；实际调用顺序以消息流水为准。模拟的并发通过步骤交错表达，未使用真实数据库或支付服务。</p>
+ <section class="current" aria-live="polite"><div><span class="eyebrow">当前执行</span><h2 id="currentTitle">准备就绪</h2><p id="currentRoute">点击“执行下一步”，观察每一次状态变化。</p></div><span id="currentStatus" class="badge">尚未执行</span></section>
+ <div class="tabs" role="tablist" aria-label="实验视图"><button role="tab" aria-selected="true" data-tab="state" id="tab-state" aria-controls="panel-state">状态账本</button><button role="tab" aria-selected="false" data-tab="messages" id="tab-messages" aria-controls="panel-messages">接口消息 <span id="logCount">0</span></button><button role="tab" aria-selected="false" data-tab="results" id="tab-results" aria-controls="panel-results">验证结果</button><button role="tab" aria-selected="false" data-tab="contracts" id="tab-contracts" aria-controls="panel-contracts">模型与边界</button></div>
+ <section id="panel-state" role="tabpanel" aria-labelledby="tab-state">
+  <div class="state-grid"><article class="panel"><div class="panel-title"><h2>车厢资源</h2><label>查看区间 <select id="viewRange"><option value="0,2">A → C</option><option value="0,1">A → B</option><option value="1,2">B → C</option></select></label></div><div id="seatMap" class="seat-map"></div><div class="legend"><span>○ 可用</span><span>◷ 锁定</span><span>● 已售</span></div><p id="seatDetail" class="hint">点击资源查看该席位在各区间的占用。</p><div id="inventoryStats" class="stat-row"></div></article>
+  <article class="panel"><h2>权益与库存额度</h2><div id="entitlement"></div><div id="quotas"></div><h3>余票查询投影</h3><div id="projection"></div><p class="hint">投影通过完整快照事件显式刷新。未投递事件时，查询结果可能落后于权威库存。</p></article></div>
+  <article class="panel"><h2>销售订单</h2><div id="orders" class="table-wrap"></div></article>
+  <div class="state-grid"><article class="panel"><h2>报价记录</h2><div id="quotes" class="table-wrap"></div></article><article class="panel"><h2>资金与票证</h2><div id="funds"></div></article></div>
+  <article class="panel"><h2>资源占用流水</h2><div id="holds" class="table-wrap"></div></article>
+ </section>
+ <section id="panel-messages" role="tabpanel" aria-labelledby="tab-messages" hidden><div class="trace-grid"><article class="panel"><h2>接口执行流水</h2><div id="trace"></div></article><article class="panel"><h2>请求 / 响应 / 状态差异</h2><p class="hint">选择一条消息查看真实输入、输出和账本变化。</p><pre id="inspector"></pre></article></div></section>
+ <section id="panel-results" role="tabpanel" aria-labelledby="tab-results" hidden><article class="panel"><h2>当前场景验收</h2><div id="verdict"></div><div id="checks" class="checks"></div><h3>接口结果断言</h3><div id="assertions"></div></article><article class="panel"><h2>批量回归结果</h2><div id="batchResults"><p class="hint">点击左侧“批量验证”，在独立状态下运行所有场景，不影响当前实验。</p></div></article></section>
+ <section id="panel-contracts" role="tabpanel" aria-labelledby="tab-contracts" hidden><article class="panel prose"><h2>这版模拟器验证什么？</h2><p>验证模块职责、操作顺序、状态变化、幂等语义、故障恢复及市场配置替换。所有操作在浏览器内存中完成，刷新后数据清空。</p><h3>明确的模拟假设</h3><ul><li>固定一趟列车 A—B—C，区间采用 [起点,终点) 表达；相邻关系由每两个资源组成的一排或包厢定义。</li><li>核心锁定采用“先完整校验、再一次同步提交”。这只表达原子性要求，不能证明数据库实现具有并发安全性。</li><li>规则依赖全车厢版本；版本改变后先重校验。身份组 X / Y 仅用于展示状态依赖，没有采集真实敏感信息。</li><li>价格按乘车区间、人数、已售资源比例和策略计算；SIM 是模拟计价单位。等级只展示，尚未设置等级价差。</li><li>报价在有效期内保证价格；优惠限额独立由核心执行。锁票成功后保留成交报价，原报价随后过期不撤销已接受的锁票。</li><li>权益产品仅模拟记名、30 天有效、A—C 内可用的计次票，确认出票时扣次。尚未模拟通勤票复杂规则与检票扣次。</li><li>余票事件携带完整快照，因此可跳过旧版本；如果真实系统采用增量事件，需增加版本缺口检测和补齐。</li><li>OTA 只模拟订单归属与库存额度；未实现真实网关、授信服务、供应商连接和通信安全。</li><li>暂不覆盖减编重排、已出票退改、酒店与餐饮、多式联运。支付后锁票失效的退款是异常补偿场景。</li></ul><h3>模块协议</h3><div id="contractTable" class="table-wrap"></div><h3>怎样使用？</h3><ol><li>先逐步运行“正常购票”，观察每一条消息和状态差异。</li><li>再运行并发、超时、权益和事件场景；预期拒绝是通过测试的一部分。</li><li>切换市场 A/B/C，再批量验证同一套核心接口。</li><li>打开“关闭占用版本校验”，运行场景 04；检查器应发现相邻约束被破坏。</li><li>进入自由实验，通过模拟接口发送任意合法请求，导出报告用于架构评审。</li></ol></article></section>
+ <details class="panel manual"><summary>自由实验 · 手动调用模拟接口</summary><p class="hint">手动调用会进入独立实验模式，保留当前账本但结束预设步骤。请求是 JSON；可根据错误结果修改后重试。</p><div class="manual-grid"><div><label for="operation">操作</label><select id="operation"></select><label for="request">请求参数</label><textarea id="request" rows="8" spellcheck="false"></textarea><button id="send" class="primary">执行模拟接口</button></div><div><h3>常用路径</h3><p>quote → validate / recommend → lock → pay → confirm</p><p>已有计次权益时：quote（entitlement: true）→ validate → lock（usePass: true）→ confirm</p><p>推进时间会执行到期释放；deliver / rebuild 刷新余票投影。错误不会自动伪装为成功。</p><button id="clearManual">清空状态开始自由实验</button></div></div></details>
+ <footer>可执行架构模型 · 不连接真实铁路、支付或旅客数据 · 用于设计验证，不替代生产系统测试</footer>
+</main></div><div id="toast" role="alert" hidden></div>
+<script src="engine.js"></script><script src="app.js"></script></body></html>

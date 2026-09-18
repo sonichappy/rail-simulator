@@ -1,0 +1,228 @@
+{
+  "generatedAt": "2026-09-18T01:55:08.210Z",
+  "scope": "42 个市场场景回归、3 个故障检出及补充边界测试；不代表生产系统认证",
+  "total": 55,
+  "passed": 55,
+  "results": [
+    {
+      "name": "A / 01 正常购票",
+      "passed": true
+    },
+    {
+      "name": "A / 02 重复锁票与出票",
+      "passed": true
+    },
+    {
+      "name": "A / 03 双渠道抢同一席位",
+      "passed": true
+    },
+    {
+      "name": "A / 04 规则校验后状态变化",
+      "passed": true
+    },
+    {
+      "name": "A / 05 最后一个优惠配额",
+      "passed": true
+    },
+    {
+      "name": "A / 06 报价过期再核价",
+      "passed": true
+    },
+    {
+      "name": "A / 07 已出票但响应丢失",
+      "passed": true
+    },
+    {
+      "name": "A / 08 支付后锁票到期",
+      "passed": true
+    },
+    {
+      "name": "A / 09 计次票购买与使用",
+      "passed": true
+    },
+    {
+      "name": "A / 10 取消预约恢复次数",
+      "passed": true
+    },
+    {
+      "name": "A / 11 同座不同区间复用",
+      "passed": true
+    },
+    {
+      "name": "A / 12 渠道额度与订单归属",
+      "passed": true
+    },
+    {
+      "name": "A / 13 余票事件乱序与重建",
+      "passed": true
+    },
+    {
+      "name": "A / 14 动态定价策略",
+      "passed": true
+    },
+    {
+      "name": "B / 01 正常购票",
+      "passed": true
+    },
+    {
+      "name": "B / 02 重复锁票与出票",
+      "passed": true
+    },
+    {
+      "name": "B / 03 双渠道抢同一席位",
+      "passed": true
+    },
+    {
+      "name": "B / 04 规则校验后状态变化",
+      "passed": true
+    },
+    {
+      "name": "B / 05 最后一个优惠配额",
+      "passed": true
+    },
+    {
+      "name": "B / 06 报价过期再核价",
+      "passed": true
+    },
+    {
+      "name": "B / 07 已出票但响应丢失",
+      "passed": true
+    },
+    {
+      "name": "B / 08 支付后锁票到期",
+      "passed": true
+    },
+    {
+      "name": "B / 09 计次票购买与使用",
+      "passed": true
+    },
+    {
+      "name": "B / 10 取消预约恢复次数",
+      "passed": true
+    },
+    {
+      "name": "B / 11 同座不同区间复用",
+      "passed": true
+    },
+    {
+      "name": "B / 12 渠道额度与订单归属",
+      "passed": true
+    },
+    {
+      "name": "B / 13 余票事件乱序与重建",
+      "passed": true
+    },
+    {
+      "name": "B / 14 动态定价策略",
+      "passed": true
+    },
+    {
+      "name": "C / 01 正常购票",
+      "passed": true
+    },
+    {
+      "name": "C / 02 重复锁票与出票",
+      "passed": true
+    },
+    {
+      "name": "C / 03 双渠道抢同一席位",
+      "passed": true
+    },
+    {
+      "name": "C / 04 规则校验后状态变化",
+      "passed": true
+    },
+    {
+      "name": "C / 05 最后一个优惠配额",
+      "passed": true
+    },
+    {
+      "name": "C / 06 报价过期再核价",
+      "passed": true
+    },
+    {
+      "name": "C / 07 已出票但响应丢失",
+      "passed": true
+    },
+    {
+      "name": "C / 08 支付后锁票到期",
+      "passed": true
+    },
+    {
+      "name": "C / 09 计次票购买与使用",
+      "passed": true
+    },
+    {
+      "name": "C / 10 取消预约恢复次数",
+      "passed": true
+    },
+    {
+      "name": "C / 11 同座不同区间复用",
+      "passed": true
+    },
+    {
+      "name": "C / 12 渠道额度与订单归属",
+      "passed": true
+    },
+    {
+      "name": "C / 13 余票事件乱序与重建",
+      "passed": true
+    },
+    {
+      "name": "C / 14 动态定价策略",
+      "passed": true
+    },
+    {
+      "name": "故障检出 / skipVersion",
+      "passed": true
+    },
+    {
+      "name": "故障检出 / skipQuota",
+      "passed": true
+    },
+    {
+      "name": "故障检出 / skipIdempotency",
+      "passed": true
+    },
+    {
+      "name": "族群偏好 / 同排推荐与跨排拒绝",
+      "passed": true
+    },
+    {
+      "name": "区间额度 / 同座非重叠区间只占各段额度",
+      "passed": true
+    },
+    {
+      "name": "幂等键 / 不同订单不能复用同一键",
+      "passed": true
+    },
+    {
+      "name": "资源失败 / 不得冻结权益次数",
+      "passed": true
+    },
+    {
+      "name": "权益最后一次 / 并发使用不能超扣",
+      "passed": true
+    },
+    {
+      "name": "先确认后到期 / 已售不会被定时释放",
+      "passed": true
+    },
+    {
+      "name": "无支付 / 禁止普通票确认",
+      "passed": true
+    },
+    {
+      "name": "支付重复 / 只产生一笔收款",
+      "passed": true
+    },
+    {
+      "name": "报价有效期 / 锁定后保存价格承诺",
+      "passed": true
+    },
+    {
+      "name": "市场配置 / 非法模板拒绝",
+      "passed": true
+    }
+  ]
+}

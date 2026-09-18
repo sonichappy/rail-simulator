@@ -1,0 +1,1207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-09-16T00:00:00.000Z" agent="Codex" version="31.4.5">
+  <diagram id="page-1" name="01 业务全景">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1-1" value="海外铁路票务系统 · 业务能力全景" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-2" value="工作假设：运营方管理自有运力；外部铁路通过适配接入。此图表达业务边界，不规定微服务拆分。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    01" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-4" value="01 / 销售渠道与履约终端" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="135" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;自营销售&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Web · App · 窗口 · 自助售票机" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="178" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;分销接入&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;第三方售票 · 渠道身份与销售权限" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="178" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;乘车履约&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;自动检票 · 手持查验 · 离线同步" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="178" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;运营工作台&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;产品配置 · 调额 · 客服 · 异常处置" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="178" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-9" value="渠道统一调用业务能力；检票读取有效乘车权益及使用记录。渠道不单独维护库存真值。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="298" width="1490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-10" value="02 / 核心业务域" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="344" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-11" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;运行与运力&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;运营商 / 路网 / 车站 / 线路&lt;br&gt;开行日历 / 运行实例 / 停站时刻&lt;br&gt;编组版本 / 席位 / 运营变更" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="390" width="350" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-12" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;库存与票额&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;区间资源 / 临时占用 / 已确认占用&lt;br&gt;渠道配额 / 预分 / 发布 / 受保护用途&lt;br&gt;置换 / 无座容量 / 共用与复用*" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="390" width="350" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-13" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;产品与报价&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;乘车产品 / 订座 / 计次权益 / 附加项&lt;br&gt;票价规则 / 优惠资格 / 费用明细&lt;br&gt;报价时效 / 币种 / 成交规则快照" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="390" width="350" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-14" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;交易与资金&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;购买人 / 乘车人 / 订单及订单项&lt;br&gt;预订 / 确认 / 收款 / 退款&lt;br&gt;幂等 / 结果核查 / 对账 / 结算" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="390" width="350" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-15" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;票证与使用&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;乘车权益 / 凭证签发 / 替换 / 作废&lt;br&gt;有效范围 / 使用记录 / 次数余额&lt;br&gt;检票语义 / 离线能力与冲突处理" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="590" width="350" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-16" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;售后与运营变更&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;退票 / 改签 / 部分售后&lt;br&gt;停运 / 减编 / 席位重排 / 通知&lt;br&gt;恢复流程 / 人工工单 / 审计" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="590" width="350" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;经营与服务&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;营销：补贴来源 / 优惠适用范围&lt;br&gt;客服：查询 / 工单 / 授权操作&lt;br&gt;监控：超时 / 资金差异 / 权益异常" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="590" width="350" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;外部供应适配（按需）&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;时刻 / 报价 / 占用 / 预订 / 票证&lt;br&gt;内部与供应商编号映射&lt;br&gt;查询确认 / 回调 / 重试 / 能力差异" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="590" width="350" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-19" value="03 / 共用基础与范围控制" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="792" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-20" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;共用平台能力&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;市场配置07 · 席位08 · 票价币种09 · 支付10&lt;br&gt;语言与UI 11 · GDPR数据保护12–13 · 组织权限与审计" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="836" width="740" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p1-21" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;首期边界与扩展&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;优先闭环：铁路购票 → 乘车 → 售后 → 对账&lt;br&gt;机票 / 船票 / 公路车票 / 酒店 / 保险保留扩展位；*术语待确认" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="836" width="740" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-2" name="02 核心对象关系">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p2-1" value="核心对象 · 从运力到乘车权益" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-2" value="箭头标注业务关联及典型基数；不代表数据库外键。分离产品、报价、库存、资金和凭证的生命周期。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    02" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-4" value="运力与资源" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=20;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="137" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-5" value="商品与承诺" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=20;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="430" y="137" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-6" value="购买与资金" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=20;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="820" y="137" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-7" value="履约与使用" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=20;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="137" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;运行实例&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;运营商 + 唯一实例ID + 运营日&lt;br&gt;车次显示号 / 时刻与编组版本" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="185" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-9" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;有序停站与区间&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;一趟运行含多个停站位置&lt;br&gt;列车始终站 ≠ 乘客上下车站" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="370" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-10" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;席位 / 容量资源&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;具体座椅、卧铺或容量池&lt;br&gt;可售区间 / 用途 / 限制" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="555" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-11" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;库存占用&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;资源 + 区间 + 数量 + 到期时间&lt;br&gt;临时 / 已确认 / 释放；关联预订" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="740" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-12" value="包含 1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-8" target="p2-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-13" value="适用编组提供资源" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-9" target="p2-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-14" value="资源被分段占用 1:N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-10" target="p2-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-15" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;产品定义&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;乘车适用范围 / 退改条件 / 席别&lt;br&gt;订座关系：必选 / 可选 / 已包含" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="185" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-16" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;报价与报价项&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;面向乘客及行程的金额与条件&lt;br&gt;有效期 / 币种 / 规则版本" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="370" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;预订与预订项&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;接受的报价快照 / 供应来源&lt;br&gt;占用、确认、撤销结果" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="555" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;已购乘车权益&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;乘客与行程覆盖 / 有效范围&lt;br&gt;关联产品、预订项及使用规则" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="740" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-19" value="实例化为多个报价" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-15" target="p2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-20" value="被接受后形成预订" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-16" target="p2-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-21" value="确认后产生权益" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-17" target="p2-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-22" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;购买人 / 乘车人&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;购买人可以不乘车；资格关联订单项&lt;br&gt;业务域持乘客引用，隐私控制见12页" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="185" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-23" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;订单与订单项&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;一单可含多产品、多乘客、多段&lt;br&gt;订单项关联预订项；保留来源ID" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="370" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-24" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;支付交易 / 退款交易&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;一次订单可有多次支付尝试&lt;br&gt;交易有独立状态与渠道流水号" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="555" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-25" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;资金流水 / 对账记录&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;收款与退款分别记录&lt;br&gt;关联订单项、费用和结算对象" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="740" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-26" value="购买 / 乘坐关联" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-22" target="p2-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-27" value="关联 1:N 交易" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-23" target="p2-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-28" value="入账与核对" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-24" target="p2-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-29" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;行程与行程段&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;用户出行方案 / 换乘段&lt;br&gt;运行段引用实际运行实例" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="185" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-30" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;订座记录（如需）&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;对应乘客、运行段和占用资源&lt;br&gt;可与乘车权利分开或组合销售" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="370" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-31" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;票证 / 版本&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;承载权益的条码、电子或纸凭证&lt;br&gt;签发 / 替换 / 作废 / 原票关联" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="555" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-32" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;检票 / 权益使用记录&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;查验 ≠ 必然消耗；按产品解释&lt;br&gt;进出站 / 车上查验 / 次数核销" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="740" width="350" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-33" value="按行程段选择" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-29" target="p2-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-34" value="票证关联权益与订座" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-30" target="p2-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-35" value="关联多次使用事件" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p2-31" target="p2-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-36" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;跨域关联约束&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;预订项 ↔ 库存占用；订单项 ↔ 预订项；乘车权益 ↔ 乘车人及行程覆盖。&lt;br&gt;票证可覆盖多个权益，也可能被新版本替换；不要假定订单、旅客、座位、票证始终一一对应。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="885" width="1520" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-3" name="03 库存与定价">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p3-1" value="库存与定价 · 两套关联但独立的模型" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-2" value="自营库存由本系统控制；外部供应以供应方确认结果为准。报价有效、价格保留与资源锁定分别定义。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    03" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-4" value="A / 区间资源与销售配额" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="137" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;物理资源&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;运行实例 + 编组版本&lt;br&gt;席位或容量池 + 可用区间" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;销售控制&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;渠道 / 产品 / 区间可售策略&lt;br&gt;预分 / 发布 / 保留用途" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="180" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;占用记录&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;临时占用 → 确认或释放&lt;br&gt;记录关联预订与到期时间" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="180" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;可售结果&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;基于资源、占用和销售限制计算&lt;br&gt;查询结果不代表占用成功" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="180" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-9" value="约束" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3-5" target="p3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-10" value="控制受理" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3-6" target="p3-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-11" value="派生" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3-7" target="p3-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-12" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;连续席位反例：同一列车 A → B → C&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;1号座：A—B 空闲，B—C 已售&lt;br&gt;2号座：A—B 已售，B—C 空闲&lt;br&gt;各段余量均为1；要求全程不换座时，A—C可售连续座位为0。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="335" width="740" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-13" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;必须明确的资源约束&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;同席位的重叠区间不得重复确认；所有渠道使用统一占用入口。&lt;br&gt;释放与确认并发时只能产生一个有效结果；重复请求不得重复占用。&lt;br&gt;加减定员或置换先评估已售影响，再生成重排、票证变更及售后任务。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="335" width="740" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-14" value="B / 规则 → 报价 → 成交快照" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="530" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-15" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;定价规则集&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;基础：里程 / 区间 / 产品价（按需）&lt;br&gt;动态：时间 / 余量策略（按需）&lt;br&gt;优惠：身份资格 / 活动 / 渠道补贴" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="576" width="460" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-16" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;报价计算&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;匹配条件 → 优先级 → 互斥/叠加&lt;br&gt;明确优惠基数、费用项目与承担方&lt;br&gt;输出币种、金额明细、有效期和条件" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="576" width="460" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;成交快照&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;保留旅客接受的金额与规则版本&lt;br&gt;含退改条件及费用、优惠分摊&lt;br&gt;后续规则变更不静默重算历史成交" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="576" width="460" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-18" value="计算" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3-15" target="p3-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-19" value="接受报价" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p3-16" target="p3-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-20" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;产品维度拆分&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;计次票：有效期 / 次数余额 / 预约与核销规则。&lt;br&gt;团体票：共同购买人数 / 名单 / 集体定价与退改约束。&lt;br&gt;席别、产品灵活性、旅客资格、购买群体分别建模。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="776" width="740" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p3-21" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;尚待定义的业务术语&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;共用 / 复用：明确共享对象、区间、渠道以及冲突规则。&lt;br&gt;原退定义：保留原术语，确认含义后归入定价或售后。&lt;br&gt;罚款：若为乘车违规款项，单独进入补收或处置流程。&lt;br&gt;无坐席上限：统一名称为无座容量上限，并确认适用产品。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="776" width="740" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-4" name="04 购票与状态">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p4-1" value="购票闭环 · 正常流程与结果不确定分支" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-2" value="以下采用“先占用、后支付、再确认出票”的示意路径；供应商不支持锁票时，需要配置适配流程。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    04" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-4" value="A / 主流程（自营示例）" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="139" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;1 查询行程&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;旅客 / 日期 / 上下车站" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="188" width="220" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;2 获取报价&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;产品 / 金额 / 条件" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="188" width="220" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;3 创建预订&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;占用资源 / 到期时间" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="188" width="220" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;4 发起支付&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;订单关联支付尝试" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="188" width="220" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-9" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;5 确认及出票&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;确认预订 / 签发凭证" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="188" width="220" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-10" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;6 通知与乘车&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;交付票证 / 验检记录" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="188" width="220" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p4-5" target="p4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p4-6" target="p4-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p4-7" target="p4-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p4-8" target="p4-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p4-9" target="p4-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-16" value="B / 关键异常与恢复动作" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="355" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;报价变化 / 占用失败&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;重新获取报价并告知变化。&lt;br&gt;未经用户接受，不静默加价扣款。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="403" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;支付失败 / 占用到期&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;关闭待支付路径，释放临时资源。&lt;br&gt;晚到的成功通知进入核查与补偿。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="403" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-19" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;支付成功 / 出票结果未知&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;先按业务ID查询，不直接重复出票。&lt;br&gt;确认失败后退款或转人工；记录证据。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FDEDEC;strokeColor=#C56B64;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="403" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-20" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;重复回调 / 部分成功&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;按业务幂等键去重与核对状态。&lt;br&gt;多旅客多段：按组合承诺补偿或处理。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FDEDEC;strokeColor=#C56B64;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="403" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-21" value="C / 独立状态轨道（示意，不是完整枚举）" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="597" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-22" value="&lt;b&gt;预订&lt;/b&gt;　｜　待确认 → 临时占用 → 已确认；失败 / 到期 / 撤销单独表达" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="640" width="1520" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-23" value="&lt;b&gt;支付&lt;/b&gt;　｜　待支付 → 处理中 → 成功或失败；结果未知必须查询确认" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="719" width="1520" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-24" value="&lt;b&gt;票证&lt;/b&gt;　｜　待签发 → 有效 → 替换或作废；签发失败不等于支付失败" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="798" width="1520" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-25" value="&lt;b&gt;订单&lt;/b&gt;　｜　根据订单项、预订、支付及售后聚合展示；保留部分完成状态" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="877" width="1520" height="69" as="geometry" />
+        </mxCell>
+        <mxCell id="p4-26" value="共用要求：请求关联ID · 幂等记录 · 超时任务 · 回调处理 · 状态核对 · 人工接管 · 全程审计" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="970" width="1520" height="28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-5" name="05 售后与运营异常">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p5-1" value="售后与履约 · 退改、运行变更、检票使用" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-2" value="票证失效、资源释放和资金退款是不同动作；需要明确依赖、恢复策略及最终一致的检查点。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    05" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-4" value="A / 退票与部分退票" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="135" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;选择售后范围&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;旅客 / 订单项 / 行程段" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;生成退票方案&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;原成交条件 / 已用权益&lt;br&gt;应退金额 / 费用 / 时效" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="180" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;用户确认方案&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;建立售后单及处理版本" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="180" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;执行业务撤销&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;供应或预订确认&lt;br&gt;权益作废 / 资源处理" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="180" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-9" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;退款与核对&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;跟踪支付渠道结果&lt;br&gt;到账记录 / 差异处理" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="180" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5-5" target="p5-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5-6" target="p5-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5-7" target="p5-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5-8" target="p5-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-14" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;改签：关联原权益与新预订&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;计算新方案、可退价值、手续费及补退差额；确定新资源保留和旧权益撤销顺序。&lt;br&gt;新预订失败时保留或恢复旧承诺；禁止“先无条件作废旧票，再尝试购买新票”。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="353" width="1520" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-15" value="B / 停运、减编、晚点等运营变更" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="507" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-16" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;接收变更&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;运行实例 / 编组版本" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="550" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;计算影响&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;乘客 / 席位 / 联程&lt;br&gt;已购权益与服务承诺" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="550" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;形成处置方案&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;重排 / 替代 / 退改&lt;br&gt;明确自动与人工边界" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="550" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-19" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;实施与通知&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;旅客确认（如需）&lt;br&gt;换票 / 通知 / 工单" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="970" y="550" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-20" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;闭环核对&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;权益、资源、资金&lt;br&gt;处理记录及遗留异常" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="550" width="280" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5-16" target="p5-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5-17" target="p5-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5-18" target="p5-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p5-19" target="p5-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-25" value="C / 验检票与权益使用" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="726" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-26" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;在线验检&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;验证票证真实性、有效范围及当前版本。&lt;br&gt;区分进站、出站、车上查验与计次核销。&lt;br&gt;按规则记录使用，不把每次扫码都视为整票消耗。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="770" width="480" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-27" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;离线能力（按目标设备确认）&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;本地可验证范围 / 数据版本 / 同步时间。&lt;br&gt;定义作废信息延迟及重复使用风险处置。&lt;br&gt;恢复联网后上传事件并核对冲突。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="770" width="480" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-28" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;恢复与人工处理&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;退款失败：重试、查询、人工对账。&lt;br&gt;换票后：原票与新票关联，避免双重有效。&lt;br&gt;通知失败：补发并记录，不改变票务事实。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FDEDEC;strokeColor=#C56B64;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="770" width="480" height="185" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-6" name="06 边界与实施顺序">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p6-1" value="边界与实施顺序 · 把未决问题显式留在图中" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-2" value="尚未确认：经营角色、目标国家与运营商、首期产品范围，以及原图中的部分业务术语。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    06" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-4" value="A / 权威状态归属（建议；按经营模式确认）" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="135" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;运行与运力&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;自营：运行计划及运力管理维护。&lt;br&gt;外部：供应方数据为依据，保留来源与版本。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="182" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;价格与库存&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;自营：定价及库存域最终受理。&lt;br&gt;外部：报价、占用和确认遵循供应方能力。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="182" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;订单与资金&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;本系统维护客户订单；外部预订保留映射。&lt;br&gt;支付渠道结果与本地资金账核对，保留差异。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="182" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;票证与使用&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;发行方维护有效性，检票方记录使用事件。&lt;br&gt;跨系统约定同步、作废、替换及冲突处理。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="182" width="350" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-9" value="B / 实施优先级" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="372" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-10" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;P0 · 平台与市场基础&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;确认经营边界、核心对象与交易状态。&lt;br&gt;建立配置版本、货币、语言与支付接口。&lt;br&gt;确定隐私用途、权限、保留与数据流。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FDEDEC;strokeColor=#C56B64;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="415" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-11" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;P1 · 铁路最小闭环&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;单一明确产品：查询到检票与退票。&lt;br&gt;实现幂等、超时、查询核对和人工恢复。&lt;br&gt;覆盖并发与资金异常，并完成隐私演练。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="415" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-12" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;P2 · 按市场扩展&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;新增市场、多运营商、换乘及复杂退改。&lt;br&gt;计次、团体、动态定价及渠道经营。&lt;br&gt;成熟后扩展酒店、机票等其他品类。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="415" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-13" value="C / 必须走通的五个验收场景" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="620" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-14" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;业务一致性场景&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;① 窗口与App抢最后一个连续可用席位：只确认一次。&lt;br&gt;② 锁票到期与支付成功同时发生：核查后完成或补偿。&lt;br&gt;③ 三人订单退一人：其余人的票证、价格和权益仍正确。&lt;br&gt;④ 减编导致已售席位不存在：受影响旅客进入处置闭环。&lt;br&gt;⑤ 退票后离线设备仍持旧票信息：按定义的离线策略处置。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="665" width="900" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-15" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;市场适配待确认&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;车次绑定 / 强制订座 / 开放日期产品。&lt;br&gt;运营日 / 跨午夜 / 时区。&lt;br&gt;旅客优惠资格 / 名单与证件要求。&lt;br&gt;币种 / 舍入 / 票证介质 / 售后能力。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="980" y="665" width="580" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-16" value="参考：OSDM 的产品、报价、乘车权利与订座职责划分；不代表本项目已决定采用该标准。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=14;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="919" width="1520" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-17" value="https://osdm.io/spec/models/   ·   https://osdm.io/spec/roles/   ·   国际化与隐私专题见07–13页；原始草图位于14页" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=13;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="950" width="1520" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-7" name="07 多市场配置与扩展">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p7-1" value="多市场平台 · 配置、规则与适配职责" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-2" value="新增设计建议：稳定票务核心 + 可版本化业务配置 + 有边界的策略扩展 + 供应商与支付适配。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    07" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-4" value="A / 上下文先拆开，避免一个 country 字段决定所有行为" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="134" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;经营与销售&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;租户 / 销售法人 / 商户账号&lt;br&gt;销售市场 / 品牌 / 渠道" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;铁路供给&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;运营商 / 运行段 / 产品 / 票价提供方&lt;br&gt;跨境行程逐段识别供应规则" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;用户偏好&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;界面语言 / 格式区域 / 显示币种&lt;br&gt;时区与无障碍偏好独立保存" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;数据处理&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;处理目的 / 主体 / 适用法域&lt;br&gt;存储区与接收方；由政策登记确定" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="180" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-9" value="B / 受约束的配置解析与发布" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="356" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-10" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;配置来源&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;平台默认 / 市场 / 运营商&lt;br&gt;产品 / 品牌 / 渠道差异" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="404" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-11" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;策略解析器&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;按字段定义优先级与合并规则&lt;br&gt;法域与供应硬约束独立校验" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="404" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-12" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;发布的配置版本&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;结构校验 / 冲突检测 / 回归&lt;br&gt;审批 / 生效期 / 灰度 / 回滚" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="404" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-13" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;业务执行上下文&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;报价、订单记录配置与规则版本&lt;br&gt;服务端校验；UI按能力展示" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="404" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p7-10" target="p7-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p7-11" target="p7-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p7-12" target="p7-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-17" value="C / 三种扩展方式及其边界" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="592" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;参数与数据配置&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;等级字典 / 年龄条件 / 价格表 / 文案&lt;br&gt;主题令牌 / 字段显示 / 支付方式开关&lt;br&gt;适合结构不变、取值不同的需求。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="635" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-19" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;版本化策略扩展&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;定价 / 配额 / 配座 / 售后计算&lt;br&gt;声明输入输出、版本和失败行为&lt;br&gt;受控执行，不允许运营后台注入任意代码。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="635" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-20" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;外部协议适配&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;铁路 / 支付 / 税票 / 票证 / 检票&lt;br&gt;能力清单、错误映射、幂等与结果查询&lt;br&gt;外部不可用时不得虚构成功或能力。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="635" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-21" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;不可覆盖的业务约束&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;国家、品牌和UI配置不得关闭：重叠区间防超售、资金核对、授权检查、隐私访问控制与审计。&lt;br&gt;“更具体配置”并非总是优先：跨境法域冲突进入审核；供应方不支持的选座、退款等能力不得自行开启。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FDEDEC;strokeColor=#C56B64;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="841" width="1520" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="p7-22" value="验收：同一旅客可用法语界面、美元展示、欧元付款；切换语言不应改变已接受的价格与合同。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=14;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="970" width="1520" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-8" name="08 席位等级与选座">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p8-1" value="席位产品与选座 · 等级、空间和偏好分离" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-2" value="不建立跨运营商强制通用的“一等 / 二等”枚举；保留原始定义，另设可选的展示与搜索映射。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    08" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-4" value="A / 可扩展的席位模型" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="135" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;服务等级 ServiceClass&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;运营商作用域ID / 原始编码&lt;br&gt;多语言名称 / 权益 / 本地排序&lt;br&gt;跨运营商映射允许“不完全可比”。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;住宿类型 Accommodation&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;座椅 / 卧铺 / 包厢 / 其他类型&lt;br&gt;售卖单位：席位、床位或整间&lt;br&gt;包厢与内部床位声明互斥资源关系。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;席位特征与限制&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;窗 / 过道 / 桌位 / 安静区 / 方向&lt;br&gt;轮椅空间 / 同行 / 相邻 / 可用设施&lt;br&gt;资格限制、收费属性与普通偏好分离。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;编组与座位图版本&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;车厢顺序 / 楼层 / 席位ID / 坐标&lt;br&gt;资源ID稳定映射；显示号码可不同&lt;br&gt;检修或换编组后重新校验分配结果。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="180" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-9" value="B / 选座能力不是所有产品都相同" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="401" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-10" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;无选座 / 自动配座&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;无指定席产品：仅确认乘车权益。&lt;br&gt;自动配座：系统给出最终分配。&lt;br&gt;不展示供应方不支持的座位选择。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="445" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-11" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;偏好申请&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;靠窗 / 同行相邻等作为软偏好。&lt;br&gt;明确是否保证、是否额外收费。&lt;br&gt;不满足时提示，不将偏好当作承诺。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="445" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-12" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;图形选座 / 指定席位&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;座位图查询 → 临时占用 → 确认。&lt;br&gt;座位图显示空闲不代表锁定成功。&lt;br&gt;硬条件失败需重新选择或明确降级。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="445" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-13" value="C / 配座与供应能力检查" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="651" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-14" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;识别能力&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;运营商 × 产品 × 渠道&lt;br&gt;无 / 自动 / 偏好 / 指定" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="695" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-15" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;匹配约束&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;人数 / 区间连续 / 资格&lt;br&gt;软偏好与硬条件分开" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="695" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-16" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;原子占用&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;关联座位图与编组版本&lt;br&gt;资源争用时返回失败" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="695" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;确认与变更&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;记录实际席位及承诺&lt;br&gt;置换 / 补退差 / 通知" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="695" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8-14" target="p8-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8-15" target="p8-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p8-16" target="p8-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p8-21" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;验收与参考&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;验收：整包厢与内部床位不能重复售出；同行不能相邻时按约定处理；跨区间连续席位不足时不得误售。&lt;br&gt;参考 [R1] OSDM 的乘车权利与订座分离；上述等级、布局和能力配置为本项目建议设计。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="874" width="1520" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-9" name="09 票价规则与币种">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p9-1" value="票价与金额 · 可解释规则、不可变成交记录" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-2" value="不同运营商的计算方式可并存；Money 必须同时包含金额与币种，禁止以浮点数直接计算财务金额。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    09" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-4" value="A / 票价策略管线（顺序由版本化策略明确）" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="134" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;规则匹配&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;运营商 / 区间 / 产品 / 旅客&lt;br&gt;销售市场 / 时间 / 渠道" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="350" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;基础与动态计算&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;里程 / 区间 / 分区 / 产品价&lt;br&gt;时段、库存梯度、收益策略" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="350" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;优惠、费用及税费&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;互斥 / 叠加 / 优先级 / 上限&lt;br&gt;基数、承担方、适用税费" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="350" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;报价与规则快照&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;明细 / 币种 / 条件 / 到期时间&lt;br&gt;命中规则、版本、舍入轨迹" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="180" width="350" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p9-5" target="p9-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p9-6" target="p9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p9-7" target="p9-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-12" value="B / 四种金额角色分别建模" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="378" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-13" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;产品计价币种&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;票价提供方的原始报价。&lt;br&gt;保留来源金额和原始费用明细。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="424" width="350" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-14" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;展示币种&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;面向用户的换算展示。&lt;br&gt;注明估算性质或明确锁价条件。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="424" width="350" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-15" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;支付币种&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;用户确认并实际扣款的币种。&lt;br&gt;确认页明确金额、费用与汇率条件。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="424" width="350" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-16" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;结算币种&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;与支付方、铁路方核对的币种。&lt;br&gt;分别记录结算汇率、费用及差额。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="424" width="350" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-17" value="C / 金额计算及退款规则" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="593" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;金额与汇率模型&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;定点小数 / 最小货币单位；币种精度与舍入规则有版本。&lt;br&gt;汇率来源、时间、方向、有效期、加点或费用分别记录。&lt;br&gt;渠道API金额精度可与标准不同，在适配层转换并验证 [P1]。&lt;br&gt;跨币种不直接相加；各金额角色分别出具合计。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="637" width="740" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-19" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;成交、分摊与退款&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;订单项 / 旅客 / 行程段保留费用和优惠分摊及尾差处理。&lt;br&gt;退款依据成交条件及支付币种约定，不按当前展示价重算。&lt;br&gt;记录退款、供应退款、汇兑差额；是否原路退由渠道能力决定。&lt;br&gt;法定调整以独立事件处理，不静默改写历史成交。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="637" width="740" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="p9-20" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;验收场景&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;零位、两位、三位小数币种；不同渠道精度；组合优惠顺序；报价过期；部分退票的分摊及尾差守恒。&lt;br&gt;来源 [P1] Adyen Currency codes and minor units（仅作为支付适配差异示例，未选定支付服务商）。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="867" width="1520" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-10" name="10 支付方式与状态">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p10-1" value="支付编排 · 支持不同渠道能力与到账时序" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-2" value="区分面向用户的付款方式与后台支付服务商；按市场、商户、币种、金额、渠道和业务能力筛选。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    10" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-4" value="A / 支付接入与路由" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="133" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;付款方式目录&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;银行卡 / 钱包 / 银行转账&lt;br&gt;本地方式 / 现金 / 企业账期" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;能力与商户规则&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;支持币种、金额、认证与时效&lt;br&gt;授权 / 扣款 / 撤销 / 退款能力" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;支付适配器&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;创建 / 查询 / 回调验签 / 去重&lt;br&gt;幂等 / 退款 / 对账 / 错误映射" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;交易与资金记录&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;支付尝试与业务订单分离&lt;br&gt;渠道流水 / 入账 / 清算差异" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="180" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p10-5" target="p10-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p10-6" target="p10-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p10-7" target="p10-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-12" value="B / 状态按能力分支，不强制一条直线" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="367" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-13" value="&lt;b&gt;需要授权的渠道&lt;/b&gt;　创建 → 待用户动作/认证 → 处理中 → 已授权 → 扣款中 → 已扣款；授权可失败、撤销或到期。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="412" width="1520" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-14" value="&lt;b&gt;直接支付或异步到账&lt;/b&gt;　创建 → 处理中 → 成功 / 失败 / 过期；结果未知先查询；前端跳回页面不构成成功凭据。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="505" width="1520" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-15" value="C / 与票额保留及恢复策略协同" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="619" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-16" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;付款时效与库存期限&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;慢到账方式可能超出锁票期限。&lt;br&gt;产品配置：限制方式、延长保留，&lt;br&gt;或结果确认后重订并处理差价/退款。&lt;br&gt;不可默认所有支付都能即时确认。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="662" width="480" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;超时、重试与切换渠道&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;未知结果先查询；不要立即再次扣款。&lt;br&gt;路由切换防止两个渠道都成功。&lt;br&gt;服务端校验订单金额及币种。&lt;br&gt;人工现金收款关联班次与交班记录。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FDEDEC;strokeColor=#C56B64;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="662" width="480" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;退款、争议与安全&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;退款状态与售后批准状态分开。&lt;br&gt;按能力处理部分退款与原路退回。&lt;br&gt;如有拒付/争议，保留独立处理记录。&lt;br&gt;优先托管支付字段/令牌；业务库不存CVV。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="662" width="480" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="p10-19" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;验收与上线条件&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;重复回调只入账一次；付款成功但出票失败可补偿；退款失败可追踪；不同付款方式通过真实渠道联调。&lt;br&gt;支付方式及认证要求按实际商户合同和适用市场验证；配置开关不代表服务商已开通该能力。参考 [P2]。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="884" width="1520" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-11" name="11 语言与界面定制">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p11-1" value="本地化与界面 · 语言、品牌和业务流程独立" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-2" value="同一国家可支持多语言；同一语言可对应多个格式区域。界面可以不同，订单与资金规则保持统一。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    11" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-4" value="A / 语言及区域格式" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="134" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;语言资源目录&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;稳定文案键 / 翻译版本 / 审核状态&lt;br&gt;语言标签如 fr-FR、ar；不当作国家&lt;br&gt;界面、票证、通知和条款分别本地化。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="350" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;文字及时间显示&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;复数 / 占位符 / 长文本 / 字体回退&lt;br&gt;RTL方向、双向文本与键盘操作&lt;br&gt;运营日、当地时刻、时区、UTC分开。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="350" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;姓名与表单适配&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;支持不同姓名、地址、电话格式&lt;br&gt;证件和旅客字段按必要性与产品约束&lt;br&gt;非必须信息允许不填，不默认西式姓名。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="350" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;文案回退规则&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;用户选择 → 市场批准默认语言&lt;br&gt;普通文案可按规则回退；记录缺失&lt;br&gt;必要合同文本缺失时阻止相关产品发布。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="180" width="350" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-9" value="B / UI配置与专用组件" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="397" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-10" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;品牌主题&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Logo / 色彩 / 字体 / 间距&lt;br&gt;Design Tokens与无障碍约束" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="442" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-11" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;页面模板&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;桌面 / 移动 / 窗口 / 自助机&lt;br&gt;布局、字段、内容和流程差异" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="442" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-12" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;能力驱动组件&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;报价卡 / 选座 / 付款 / 退改&lt;br&gt;特殊交互通过受控组件扩展" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="442" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-13" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;统一业务API&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;报价、预订、权益与售后&lt;br&gt;服务端重复校验权限与规则" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="442" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p11-10" target="p11-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p11-11" target="p11-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p11-12" target="p11-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-17" value="C / 定制边界与验收" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="622" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;允许变化 / 不允许绕过&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;可配置：品牌、布局、文字、字段顺序、支持的业务步骤。&lt;br&gt;可扩展：供应商特殊选座、支付跳转、辅助服务申请组件。&lt;br&gt;不可通过隐藏UI绕过：必需披露、业务校验、权限和数据用途控制。&lt;br&gt;隐私告知与合同条款留存所用版本；新增字段须登记用途。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="665" width="740" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-19" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;跨语言与界面测试&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;法语长文案不溢出；阿拉伯语RTL及号码混排正确。&lt;br&gt;座位图保持真实车厢几何与行车方向，不随RTL盲目镜像。&lt;br&gt;跨午夜、夏令时、跨时区运行能清楚展示日期与偏移。&lt;br&gt;用键盘及读屏完成购票；界面更换后报价和订单结果一致。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="665" width="740" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-20" value="实现参考：[I1] W3C Language tags；[I2] W3C Structural markup and right-to-left text。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=14;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="925" width="1520" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="p11-21" value="上线前按目标市场确认所需语言、法定文本和适用的无障碍要求；本页未指定国家的强制界面模板。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=14;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="958" width="1520" height="28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-12" name="12 GDPR数据保护架构">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p12-1" value="GDPR · 数据保护贯穿业务与基础设施" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-2" value="合规能力设计，非合规认证。适用范围按经营与处理活动判断，不能仅以国籍、界面语言或付款币种决定 [G1]。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    12" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-4" value="A / 建议的数据访问路径" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="135" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;用途与责任登记&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;目的 / 字段 / 合法依据 / 保存期&lt;br&gt;控制者、处理者或共同控制者角色" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;目的及权限控制&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;角色 + 租户 + 目的 + 字段权限&lt;br&gt;同意适用时核对状态与版本" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;旅客隐私资料库&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;个人信息加密 / 密钥隔离&lt;br&gt;业务仅持引用；必要时受控取用" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;最小必要输出&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;出票、客服、运营商按需取字段&lt;br&gt;禁止把完整旅客资料广播到所有域" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="180" width="350" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p12-5" target="p12-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p12-6" target="p12-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p12-7" target="p12-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-12" value="B / 用途、数据流与基础控制" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="365" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-13" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;合法依据与告知 [G2]&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;购票履约、法定义务和营销分别评估。&lt;br&gt;同意不是所有处理的统一依据。&lt;br&gt;如依赖同意：可撤回，留存版本与证据。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1ECFA;strokeColor=#8763B2;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="410" width="480" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-14" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;特殊类别与最少收集 [G2]&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;残疾/健康资料可能涉及特殊类别。&lt;br&gt;须核对Art.6依据及Art.9适用条件。&lt;br&gt;优先资格结果，避免不必要证明影像。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="410" width="480" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-15" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;日志、报表与测试（设计）&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;日志去除姓名、证件及支付敏感字段。&lt;br&gt;报表最小化；使用合成测试数据。&lt;br&gt;假名化仍可能是个人数据，不等于匿名。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F1F4F8;strokeColor=#8B9BAD;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="410" width="480" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-16" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;接收方与供应商 [G3]&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;登记铁路、支付、云、客服及其角色。&lt;br&gt;处理者协议、分处理者和共享范围。&lt;br&gt;技术接入前完成相应合同与用途核对。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="615" width="480" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;安全与隔离（设计）&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;按风险配置加密、最小权限和访问审计。&lt;br&gt;租户隔离、密钥管理、导出权限及告警。&lt;br&gt;保留期覆盖备份、日志、缓存和分析副本。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="615" width="480" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;区域部署与跨境 [G4]&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;记录存储、备份及境外访问的数据流。&lt;br&gt;评估充分性决定、SCC等适用机制。&lt;br&gt;采用SCC时评估接收地风险及补充措施。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="615" width="480" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p12-19" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;设计边界&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;选择欧洲机房不能替代用途、合同、权利和跨境评估；GDPR并非一律禁止数据离开欧洲经济区 [G4]。&lt;br&gt;资料库分离、字段访问与审计是本项目建议方案；实际合规需要持续运行证据。权利及保留流程见第13页。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FDEDEC;strokeColor=#C56B64;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="865" width="1520" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-13" name="13 GDPR权利与运营">
+    <mxGraphModel dx="1600" dy="1050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0" background="#FFFFFF">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p13-1" value="GDPR · 权利处理、保留删除与事件响应" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=28;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="26" width="1500" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-2" value="将隐私需求落为可追踪工单与执行任务；由指定责任人判断适用条件、保留例外及通知义务。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=15;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="78" width="1515" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-3" value="海外铁路票务系统  /  业务设计工作稿 v3  /  2026-09-16    ·    13" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=12;fontStyle=0;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1010" width="1510" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-4" value="A / 数据主体权利请求 [G5]" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="134" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-5" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;受理与计时&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;访问 / 更正 / 删除 / 限制&lt;br&gt;反对 / 可携带等请求" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-6" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;必要身份核验&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;避免过量补收证件&lt;br&gt;确认请求范围与适用条件" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="180" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-7" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;检索及执行&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;资料、订单、客服、日志&lt;br&gt;合法保留例外与第三方协调" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-8" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;答复与证据&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;通常一个月内答复；复杂可延两月&lt;br&gt;延长须在首月内告知理由" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="180" width="350" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p13-5" target="p13-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p13-6" target="p13-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#66809C;strokeWidth=2;fontColor=#334A62;fontSize=13;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="p13-7" target="p13-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-12" value="B / 生命周期与删除任务（设计）" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="355" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-13" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;按用途设置保存期&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;各类数据登记期限、触发点及依据。&lt;br&gt;财务法定保留与营销用途分开。&lt;br&gt;保留例外限制访问，不继续用于营销。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF2FF;strokeColor=#4477B8;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="398" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-14" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;跨系统执行与回执&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;资料库 / 缓存 / 搜索 / 分析 / 供应商&lt;br&gt;删除或匿名化任务可重试、可核对。&lt;br&gt;保留最少执行证据，避免复制被删资料。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#E6F5F1;strokeColor=#2F8878;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="398" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-15" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;备份与恢复控制&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;备份按明确策略隔离并到期清理。&lt;br&gt;恢复后重新应用删除/限制记录。&lt;br&gt;注销账号不代表全部数据可立即删除。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="398" width="480" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-16" value="C / 个人数据泄露处理 [G6]" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#CDD6E0;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;fillColor=none;strokeColor=none;spacing=0;fontSize=19;fontStyle=1;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="40" y="603" width="1510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-17" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;识别 → 控制影响 → 风险评估 → 通知判断 → 复盘&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;记录知悉时间、范围、影响和处置；处理者无不当延迟地通知控制者。&lt;br&gt;控制者应无不当延迟、尽可能在知悉后72小时内向监管机关通报；不太可能造成权利自由风险时可适用例外并留证。&lt;br&gt;可能产生高风险时，应无不当延迟通知受影响个人，除非适用法定例外；不能只等待完整调查后再计时。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FDEDEC;strokeColor=#C56B64;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="646" width="1520" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p13-18" value="&lt;b&gt;&lt;font style=&quot;font-size:18px&quot;&gt;上线证据与组织责任 [G1 / G3 / G7 / G8]&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;确定各处理活动的责任主体、处理记录、告知文本、合同和跨境依据；评估是否须指定DPO。&lt;br&gt;可能造成高风险的处理先做DPIA；上线前演练权利请求、删除恢复和泄露响应。&lt;br&gt;目标国家的保留期、营销与Cookie规则另行确认；责任人签核不替代控制措施的实际验证。" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF2E0;strokeColor=#C98B32;fontColor=#20334A;fontFamily=Helvetica;fontSize=15;align=left;verticalAlign=top;spacing=14;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="836" width="1520" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="14 原始草图（保留）" id="original-preserved">
+    <mxGraphModel dx="3474" dy="2607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;dashed=1;dashPattern=8 8;strokeColor=#666666;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="450" width="930" x="620" y="-540" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;dashed=1;dashPattern=8 8;strokeColor=#666666;fontColor=#333333;" value="" vertex="1">
+          <mxGeometry height="690" width="1278" x="-118" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-38" edge="1" parent="1" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.75;exitY=0;exitDx=0;exitDy=0;strokeWidth=6;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="505.38" y="478" as="sourcePoint" />
+            <mxPoint x="504.38" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-40" edge="1" parent="1" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.75;exitY=0;exitDx=0;exitDy=0;strokeWidth=6;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="681" y="478" as="sourcePoint" />
+            <mxPoint x="680" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-37" edge="1" parent="1" source="fLWqN6p7AfcPjkWC6zpx-14" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.75;exitY=0;exitDx=0;exitDy=0;strokeWidth=6;" target="1p-CVoQ-PdexsrVcwy0w-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="60" y="400" as="sourcePoint" />
+            <mxPoint x="110" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;dashed=1;dashPattern=8 8;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="80" width="463" x="247" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;dashed=1;dashPattern=8 8;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="280" width="450" x="630" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;dashed=1;dashPattern=8 8;strokeColor=#d79b00;" value="" vertex="1">
+          <mxGeometry height="302" width="140" x="440" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;dashed=1;dashPattern=8 8;strokeColor=#6c8ebf;shadow=0;" value="" vertex="1">
+          <mxGeometry height="220" width="490" x="-83" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="席位种类&lt;div&gt;（日期、车次、始发、终到、席别）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="175" x="205" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="个数" vertex="1">
+          <mxGeometry height="80" width="115" x="447.5" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="价格" vertex="1">
+          <mxGeometry height="80" width="130" x="616" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="国家" vertex="1">
+          <mxGeometry height="40" width="70" x="17" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="车站" vertex="1">
+          <mxGeometry height="40" width="70" x="217" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="线路" vertex="1">
+          <mxGeometry height="40" width="70" x="117" y="628" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="编组" vertex="1">
+          <mxGeometry height="40" width="70" x="17" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f8cecc;strokeColor=#b85450;" value="车厢" vertex="1">
+          <mxGeometry height="40" width="70" x="117" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="晚点" vertex="1">
+          <mxGeometry height="40" width="70" x="17" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="停运" vertex="1">
+          <mxGeometry height="40" width="70" x="117" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="加减定员" vertex="1">
+          <mxGeometry height="40" width="70" x="217" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="路网信息" vertex="1">
+          <mxGeometry height="30" width="80" x="-75" y="633" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="车辆定义" vertex="1">
+          <mxGeometry height="30" width="80" x="-75" y="573" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="动态信息" vertex="1">
+          <mxGeometry height="30" width="80" x="-75" y="513" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="车次" vertex="1">
+          <mxGeometry height="40" width="70" x="317" y="508" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="手续费" vertex="1">
+          <mxGeometry height="40" width="70" x="770" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="罚款" vertex="1">
+          <mxGeometry height="40" width="70" x="870" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="时间优惠" vertex="1">
+          <mxGeometry height="40" width="70" x="860" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="老人" vertex="1">
+          <mxGeometry height="40" width="50" x="770" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="根据余票浮动" vertex="1">
+          <mxGeometry height="40" width="70" x="770" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-35" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="额外支出" vertex="1">
+          <mxGeometry height="30" width="80" x="660" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="身份优惠" vertex="1">
+          <mxGeometry height="30" width="80" x="660" y="607" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="动态浮动" vertex="1">
+          <mxGeometry height="30" width="80" x="660" y="555" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="单里程票价" vertex="1">
+          <mxGeometry height="40" width="70" x="770" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="1p-CVoQ-PdexsrVcwy0w-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="基础票价" vertex="1">
+          <mxGeometry height="30" width="80" x="660" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="共用" vertex="1">
+          <mxGeometry height="40" width="70" x="470" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="复用" vertex="1">
+          <mxGeometry height="40" width="70" x="470" y="598" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="席位发布" vertex="1">
+          <mxGeometry height="40" width="70" x="580" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="原退定义" vertex="1">
+          <mxGeometry height="40" width="70" x="860" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="席位转用途" vertex="1">
+          <mxGeometry height="40" width="70" x="370" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="席位操作" vertex="1">
+          <mxGeometry height="30" width="80" x="260" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="席位置换" vertex="1">
+          <mxGeometry height="40" width="70" x="474" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="无坐席上限" vertex="1">
+          <mxGeometry height="40" width="70" x="470" y="658" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="席位优化" vertex="1">
+          <mxGeometry height="30" width="80" x="465" y="488" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="票价策略" vertex="1">
+          <mxGeometry height="30" width="80" x="660" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="叠加策略" vertex="1">
+          <mxGeometry height="40" width="70" x="770" y="498" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="票额预分" vertex="1">
+          <mxGeometry height="40" width="70" x="470" y="718" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="儿童" vertex="1">
+          <mxGeometry height="40" width="50" x="827" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="军人" vertex="1">
+          <mxGeometry height="40" width="50" x="884" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="残疾人" vertex="1">
+          <mxGeometry height="40" width="50" x="941" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="权益类&lt;div&gt;（计次票、团体票）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="115" x="776" y="-290" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="保险" vertex="1">
+          <mxGeometry height="52" width="115" x="1096" y="-370" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="机票" vertex="1">
+          <mxGeometry height="52" width="115" x="936" y="-370" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="船票" vertex="1">
+          <mxGeometry height="52" width="115" x="936" y="-290" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="公路车票" vertex="1">
+          <mxGeometry height="52" width="115" x="936" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="酒店" vertex="1">
+          <mxGeometry height="52" width="115" x="1256" y="-370" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="铁路车票" vertex="1">
+          <mxGeometry height="52" width="115" x="776" y="-370" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=20;fontStyle=1" value="铁路票务产品管理后台" vertex="1">
+          <mxGeometry height="30" width="220" x="380" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-43" edge="1" parent="1" source="fLWqN6p7AfcPjkWC6zpx-35" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=6;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="fLWqN6p7AfcPjkWC6zpx-34" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="521" y="-120" />
+            </Array>
+            <mxPoint x="351" y="48" as="sourcePoint" />
+            <mxPoint x="350" y="-150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="订单" vertex="1">
+          <mxGeometry height="52" width="595" x="776" y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-46" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" value="支付" vertex="1">
+          <mxGeometry height="302" width="60" x="1390" y="-460" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-47" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1" value="监控中心" vertex="1">
+          <mxGeometry height="150" width="175" x="1350" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-48" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1" value="营销中心" vertex="1">
+          <mxGeometry height="150" width="175" x="1580" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1" value="客服中心" vertex="1">
+          <mxGeometry height="150" width="175" x="1820" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1" value="自动售票" vertex="1">
+          <mxGeometry height="80" width="240" x="1700" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1" value="自动检票" vertex="1">
+          <mxGeometry height="80" width="240" x="1700" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=22;fontStyle=1" value="手持验检票" vertex="1">
+          <mxGeometry height="80" width="240" x="1700" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;fontStyle=1" value="web" vertex="1">
+          <mxGeometry height="80" width="210" x="595" y="-820" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;fontStyle=1" value="app" vertex="1">
+          <mxGeometry height="80" width="204" x="936" y="-820" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;fontStyle=1" value="窗口" vertex="1">
+          <mxGeometry height="80" width="185" x="1233" y="-820" as="geometry" />
+        </mxCell>
+        <mxCell id="fLWqN6p7AfcPjkWC6zpx-56" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;fontStyle=1" value="第三方售票" vertex="1">
+          <mxGeometry height="80" width="240" x="1510" y="-820" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
